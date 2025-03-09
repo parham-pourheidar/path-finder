@@ -1,16 +1,17 @@
-# path_finder
+# اپلیکیشن path_finder
 
-A new Flutter project similar to memory path game
+## اپلیکیشنی مشابه با بازی Memory Path 
 
-## Getting Started
+### ویژگی های کلیدی:
 
-This project is a starting point for a Flutter application.
+- ایجاد و استفاده از الگوریتم بهینه و پیشرفته برای پیاده سازی مراحل بازی
+- اسفاده ازbloc برای state management و همچنین پیاده سازی bloc design pattern
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### توضیحات بیشتر:
+#### این اپلیکیشن بر پایه بازی memory path نوشته شده که در آن باید مسیر های نشان داده شده در هر مرحله را به خاطر سپرد و tile های درست را کلیک کرد.
+#### علیرغم اینکه این اپ در اصل یک بازی میباشد اما بدون استفاده از موتور های بازی سازی نوشته شده از نوشتن الگوریتم تا state management اپلیکیشن تماما توسط توسعه دهنده این اپ نوشته شده.
+#### در هر tile از یک bloc selector استفاده شده : به این دلیل که ما لیست tile های کلیک شده را در وضعیتمان داریم و با هر کلیک کردن چون وضعیت آپدیت میشود تمامی bloc builder ها مجدد ساخته میشوند پس برای جلوگیری از این مشکل و کند شدن برنامه ما از bloc selector استفاده که وضعیت آن از نوع Color میباشد استفاده کردیم تا فقط آن tile ای که کلیک میشود rebuild شود برای درک بهتر پیشنهاد میکنم به source code اپلیکیشن مراجعه کنید.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+##### در ادامه چند screenshot از محیط برنامه به شما ارایه میشود:
